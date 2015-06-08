@@ -1,1 +1,31 @@
- 
+<h1>Profile Page</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Spicy Preference:</strong>
+  <%= @user.spicy %>
+</p>
+
+<p>
+  <strong>Dietary Restrictions:</strong>
+  <%= @user.dietary %>
+</p>
+
+<p>
+  <strong>Dietary:</strong>
+  <%= @restaurant.dietary %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %> 
