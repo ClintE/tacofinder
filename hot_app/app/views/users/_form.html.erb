@@ -34,7 +34,7 @@
   Dietary Concerns
     <div class="field">
     <%= f.select :dietary do %>
-	    <% [['Vegetarian', '1'], ['Diabetic', '2'], ['Meatatarian', '3']].each do |c| %>
+	    <% [['Vegetarian', 'Vegetarian'], ['Diabetic', 'Diabetic'], ['Meatatarian', 'Meatatarian']].each do |c| %>
 	    	<%= content_tag(:option, c.first, value: c.last) %>
 	    <% end %>
 	<% end %><br>
