@@ -20,20 +20,25 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :password %><br>
-    <%= f.text_field :password %>
-  </div>
+    <%= f.label :password_digest %><br>
+    <%= f.text_field :password_digest %>
+  </div><br>
+  Spiciness
   <div class="field">
-    <%= f.label :spicy %><br>
-    <%= f.text_field :spicy %>
-  </div>
+    <%= f.select :spicy do %>
+    	<% [['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '5'], ['6', '6'], ['7', '7'], ['8', '8'], ['9', '9'], ['10', '10']].each do |c| %>
+    		<%= content_tag(:option, c.first, value: c.last) %>
+    	<% end %>
+    <% end %>
+  </div><br>
+  Dietary Concerns
     <div class="field">
     <%= f.select :dietary do %>
 	    <% [['Vegetarian', '1'], ['Diabetic', '2'], ['Meatatarian', '3']].each do |c| %>
 	    	<%= content_tag(:option, c.first, value: c.last) %>
 	    <% end %>
-	<% end %>
-  </div>
+	<% end %><br>
+  </div><br>
   <div class="actions">
     <%= f.submit %>
   </div>
