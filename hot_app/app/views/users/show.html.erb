@@ -15,5 +15,18 @@
   <%= @user.salt %>
 </p>
 
+<p>
+	<strong>Spiciness Preference</strong>
+	<%= @user.spicy %>
+</p>
+<p>
+	<strong>Vegetarian?</strong>
+	<% if @user.vegetarian == 'vegetarian' %>
+		Yes
+	<% else %>
+		No
+	<% end %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

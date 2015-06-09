@@ -11,21 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609125241) do
+ActiveRecord::Schema.define(version: 20150609143930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "restaurants", force: :cascade do |t|
-    t.string  "name",    null: false
-    t.string  "address", null: false
+    t.string  "name",                       null: false
+    t.string  "address",                    null: false
     t.integer "spicy"
     t.string  "cost"
-    t.string  "dietary"
+    t.boolean "vegetarian", default: false
   end
 
   add_index "restaurants", ["cost"], name: "index_restaurants_on_cost", using: :btree
-  add_index "restaurants", ["dietary"], name: "index_restaurants_on_dietary", using: :btree
+  add_index "restaurants", ["vegetarian"], name: "index_restaurants_on_vegetarian", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
@@ -33,6 +33,8 @@ ActiveRecord::Schema.define(version: 20150609125241) do
     t.string   "salt"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "spicy"
+    t.boolean  "vegetarian"
   end
 
 end
