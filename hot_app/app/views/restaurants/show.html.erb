@@ -17,12 +17,12 @@
 
 <p>
   <strong>Cost:</strong>
-  <%= @restaurant.cost %>
+  <%= @restaurant.cost.titleize %>
 </p>
 
 <p>
-  <strong>Dietary:</strong>
-  <%= @restaurant.dietary %>
+  <strong>Vegetarian:</strong>
+  <%= @restaurant.vegetarian.to_s.titleize %>
 </p>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
