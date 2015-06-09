@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609015847) do
+ActiveRecord::Schema.define(version: 20150609125241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string  "name",    null: false
+    t.string  "address", null: false
+    t.integer "spicy"
+    t.string  "cost"
+    t.string  "dietary"
+  end
+
+  add_index "restaurants", ["cost"], name: "index_restaurants_on_cost", using: :btree
+  add_index "restaurants", ["dietary"], name: "index_restaurants_on_dietary", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email"
