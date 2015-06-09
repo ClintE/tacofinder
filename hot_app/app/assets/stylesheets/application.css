@@ -46,8 +46,11 @@
 
 .main_list  {
   max-width: 75%;
+  height: 500px;
+  overflow: scroll;
   margin: 0 auto;
   background-color: lightgrey;
+
 }
 
 .indiv_restaurant {  
