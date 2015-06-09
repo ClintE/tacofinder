@@ -39,6 +39,10 @@
   GENERAL STYLES
 ==================================*/
 
+.rest_text  {
+  text-align: center;
+  font-style: underline;
+}
 
 .main_list  {
   max-width: 75%;
