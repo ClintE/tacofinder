@@ -1,11 +1,11 @@
  <p id="notice"><%= notice %></p>
 
-<h1><strong>All Restaurants</strong></h1>
+<h1 class="rest_text"><strong>All Restaurants</strong></h1>
 
 
-<div class="master_list">
+<div class="main_list">
     <% @restaurants.each do |restaurant| %>
-    <div class="individual_restaurant">
+    <div class="indiv_restaurant">
         <strong>Restaurant:</strong></br>
         <p><stong><%= restaurant.name %></stron><br>
        <strong>Address:</strong><br>
@@ -18,11 +18,9 @@
         <%= restaurant.vegetarian %><br>
         <%= link_to 'Show', restaurant %></p>
     </div>
-</div>
-        <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
-        <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      </tr>
     <% end %>
+</div>
+    
 
 
-<%= link_to 'Add a new restaurant', new_restaurant_path %>
+<p class="rest_text"><%= link_to 'Add a new restaurant', new_restaurant_path %></p>

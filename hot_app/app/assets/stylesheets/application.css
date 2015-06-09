@@ -39,6 +39,21 @@
   GENERAL STYLES
 ==================================*/
 
+.rest_text  {
+  text-align: center;
+  font-style: underline;
+}
+
+.main_list  {
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+
+.indiv_restaurant {  
+  border: 1px solid black;
+}
+
 body {
    font-family: 'Maven Pro', sans-serif;
     line-height: 30px;
