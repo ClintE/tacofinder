@@ -1,3 +1,35 @@
+<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Some Like It Hot</title>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-links-track' => true %>
+    <%=stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbo-links-track' => true %>
+
+    <%=stylesheet_link_tag 'ionicons', media: 'all','data-turbolinks-track' => true %>
+
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  
+
+</head>
+
+
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "sample app", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to "Register",   '#' %></li>
+        <li><%= link_to "Login", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 <p id="notice"><%= notice %></p>
 
 <h1>All Users</h1>

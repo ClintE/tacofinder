@@ -13,3 +13,297 @@
  *= require_tree .
  *= require_self
  */
+/*=============================================================
+    Authour URL: www.designbootstrap.com
+    
+    http://www.designbootstrap.com/
+
+    License: MIT
+
+    http://opensource.org/licenses/MIT
+
+    100% Free To use For Personal And Commercial Use.
+
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+   
+========================================================  */
+
+
+/*================================
+    GOOGLE FONT
+==================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Anton|Maven+Pro:500,700); /* FREE GOOGLE FONTS */
+
+/*================================
+  GENERAL STYLES
+==================================*/
+
+body {
+   font-family: 'Maven Pro', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.pad-bottom {
+    padding-bottom: 90px;
+}
+
+.icon-wrapper {
+    padding-top:50px;
+    padding-bottom:30px;
+    font-size:50px;
+    color:#D30515;
+}
+
+h2 {
+    color:#D30515;
+    font-size: 2.5em;
+}
+.head-line h1 {
+ margin-bottom: 20px;
+line-height: 30px;
+font-size: 25px;
+color: #737373;
+}
+    .head-line p {
+        padding-bottom:10px;
+    }
+
+ /*================================
+  BUTTON STYLES
+==================================*/
+.btn-custom {
+   min-height:60px;
+    border-radius:0px;
+    background-color: white;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+padding:15px 40px 15px 40px;
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+   margin:25px 5px 5px 0px;
+}
+
+
+.btn-one {   
+   
+/*background-color:transparent;*/
+border:5px solid #FFF; 
+color:#home h1 {
+  margin-bottom: 70px;
+  line-height: 40px;
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+  border: 15px solid #D30515;
+  background-color: #D30515;
+  padding: 20px;
+  max-width: 350px;
+  font-weight: 900;
+};       
+  
+}
+/* .btn-one:hover {
+
+ background-color: black;
+ color:#fff;
+ text-decoration:none;
+    }*/
+/*================================
+  HOME SECTION STYLES
+==================================*/
+
+#home {
+    /*background: url(../img/home.jpg) no-repeat center center; */
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;    
+}
+
+    #home .overlay {
+        padding-top: 100px;
+        background-color: black;
+        min-height: 700px;
+        padding-bottom: 40px;
+    }
+     #home h1 {
+     margin-bottom: 70px;
+line-height: 40px;
+font-size: 30px;
+background-color: #D30515;
+color: white;
+text-transform: uppercase;
+border: 2px solid #D30515;
+padding: 20px;
+max-width: 350px;
+font-weight:900;
+    }
+.logo-center {
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+    #home h4 {
+      margin-bottom: 10px;
+line-height: 40px;
+font-size: 20px;
+color: #fff;
+    }
+    /* EMAIL SUBSCRIBE */
+#email-subscribe .form-control
+{
+display:inline;
+height:50px;
+font-size:20px;
+margin-right:20px;
+width:60%;
+}
+
+#email-subscribe .btn-subscribe
+{
+height:50px;
+font-size:20px;
+color: #fff;
+background-color: #D30515;
+border-color: #51A8A8;
+margin-top:-10px;
+}
+ .icon-home {
+    padding-bottom:20px;
+    padding-top:20px;
+    font-size:100px;
+    color:#D30515;
+    cursor:pointer;
+}
+    .icon-home a, .icon-home a:hover, .icon-home a:focus {
+        color:#D30515;
+        text-decoration:none;
+    }
+    /*================================
+    HOME BELOW STYLES
+==================================*/
+#home-below {
+    background-color: #D30515;
+}
+  h4 {
+    color: white;
+  }
+/*================================
+  FEATURE SECTION STYLES
+==================================*/
+
+ .feature-wrapper {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+ /*================================
+    CLIENTS SECTION STYLES
+==================================*/
+
+   #clients {
+    background: url(../img/clients.jpg) no-repeat center center; 
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;    
+}
+
+    #clients .overlay {
+        background-color: white;
+    }
+
+.client-cover {
+  background-color: #D30515;
+padding: 60px 50px 60px 50px;
+color: #5b5555;
+}
+    /* TESTIMONIAL */
+
+#carousel-clients h4 {
+    color:#fff;
+    line-height:30px;
+    font-size:40px;
+}
+#carousel-clients h3 {
+    color:white;
+    line-height:35px;
+    font-size:20px;
+
+}
+#carousel-clients i
+{
+color:#fff;
+}
+/*================================
+    WORKS SECTION STYLES
+ ============================  */
+#works {
+    padding-bottom:0px;
+}
+#works h4{
+    color:#D30515;
+    font-size:100px;
+    font-weight:900;
+    padding-bottom:20px;
+
+}
+    
+#works .big-img {
+    background-color: gray;
+border-top: 15px solid #D30515;
+border-left: 15px solid #D30515;
+border-right: 15px solid #D30515;
+}
+/*================================
+    CONATCT SECTION STYLES
+ ============================  */
+#contact {
+    background-color: black;
+
+}
+    #contact h3 {
+        color:#494949;
+    }
+/*================================
+    FOOTER SECTION STYLES
+ ============================  */
+footer {
+    padding:20px;
+    color:#676767;
+    font-size:16px;
+    background-color:rgba(16, 16, 16, 0.9);
+    }
+    footer a,footer a:hover,footer a:focus {
+        color:#D30515;
+        text-decoration:none;
+        margin-right:10px;
+        margin-left:10px;
+    }
+
+/*================================
+    RESPONSIVE STYLES
+ ============================  */
+
+@media (min-width: 100px) and (max-width: 498px) {
+   #email-subscribe .form-control
+{
+display:block;
+width:100%;
+}
+
+#email-subscribe .btn-subscribe
+{
+margin-top:20px;
+}
+ 
+
+}
