@@ -95,8 +95,8 @@ padding:15px 40px 15px 40px;
 .btn-one {   
    
 /*background-color:transparent;*/
-border:5px solid #FFF; 
-color:#home h1 {
+  border:5px solid #FFF; 
+  color: white;
   margin-bottom: 70px;
   line-height: 40px;
   font-size: 30px;
@@ -116,9 +116,7 @@ color:#home h1 {
  color:#fff;
  text-decoration:none;
     }*/
-/*================================
-  HOME SECTION STYLES
-==================================*/
+
 
 #home {
     /*background: url(../img/home.jpg) no-repeat center center; */
