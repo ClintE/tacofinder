@@ -12,7 +12,7 @@
 
   <div id="nav" class="rest_text">
     <% if current_user %>
-      <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
+      <%= link_to "Edit Profile", user_edit_path %>
       <%= link_to "Logout", :logout, method: :post %>
     <% else %>
       <%= link_to "Register", new_user_path %> |

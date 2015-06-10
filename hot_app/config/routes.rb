@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
   get 'user_sessions/new'
-
   get 'user_sessions/create'
-
   get 'user_sessions/destroy'
+
+  # Set user path to point to /user.
+  get 'user' => 'users#show'
+  get 'user/edit' => 'users#edit'
+  patch 'user' => 'users#show'
 
   resources :users
   resources :restaurants
