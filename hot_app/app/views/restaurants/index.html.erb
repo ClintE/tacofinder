@@ -4,11 +4,10 @@
 
 
 <div class="main_list">
-    <% @restaurants.each do |restaurant| %>
-        <% if @user %>
-            <% if restaurant.spicy == 5 %>
+    <% @restaurant = Restaurant.where(vegetarian: 'No') %>
+    <% @restaurant.each do |restaurant| %>
                     <div class="indiv_restaurant">
-                        <strong>Restaurant: </strong></br>
+                        <strong>Name: </strong></br>
                         <p><%= restaurant.name %><br>
                        <strong>Address:</strong><br>
                         <%= restaurant.address %><br>
@@ -20,24 +19,6 @@
                         <%= restaurant.vegetarian.to_s %><br>
                         <%= link_to 'Show', restaurant %></p>
                     </div>
-            <% else %>
-
-
-                    <div class="indiv_restaurant">
-                        <strong>Restaurant:</strong></br>
-                        <p><stong><%= restaurant.name %></stron><br>
-                       <strong>Address:</strong><br>
-                        <%= restaurant.address %><br>
-                        <strong>Spice Level:</strong><br>
-                        <%= restaurant.spicy %><br>
-                        <strong>Cost:</strong>
-                        <%= restaurant.cost.titleize %><br>
-                        <strong>Vegetarian Friendly?</strong>
-                        <%= restaurant.vegetarian.to_s %><br>
-                        <%= link_to 'Show', restaurant %></p>
-                    </div>
-            <% end %>
-        <% end %>
     <% end %>
 
 </div>
