@@ -13,9 +13,9 @@
         <strong>Spice Level:</strong><br>
         <%= restaurant.spicy %><br>
         <strong>Cost:</strong>
-        <%= restaurant.cost %><br>
+        <%= restaurant.cost.titleize %><br>
         <strong>Vegetarian Friendly?</strong>
-        <%= restaurant.vegetarian %><br>
+        <%= restaurant.vegetarian.to_s.titleize %><br>
         <%= link_to 'Show', restaurant %></p>
     </div>
     <% end %>
