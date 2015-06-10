@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20150610150351) do
   enable_extension "plpgsql"
 
   create_table "restaurants", force: :cascade do |t|
-    t.string  "name",                         null: false
-    t.string  "address",                      null: false
+    t.string  "name",       null: false
+    t.string  "address",    null: false
     t.integer "spicy"
     t.string  "cost"
-    t.string  "vegetarian", default: "false"
+    t.string  "vegetarian"
   end
 
   add_index "restaurants", ["cost"], name: "index_restaurants_on_cost", using: :btree
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20150610150351) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "spicy"
-    t.boolean  "vegetarian"
+    t.integer  "vegetarian"
   end
 
 end

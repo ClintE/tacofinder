@@ -6,7 +6,7 @@
 <div class="main_list">
     <% @restaurants.each do |restaurant| %>
         <% if @user %>
-            <% if restaurant.vegetarian == true %>
+            <% if restaurant.spicy == 5 %>
                     <div class="indiv_restaurant">
                         <strong>Restaurant: </strong></br>
                         <p><%= restaurant.name %><br>
@@ -20,23 +20,23 @@
                         <%= restaurant.vegetarian.to_s %><br>
                         <%= link_to 'Show', restaurant %></p>
                     </div>
+            <% else %>
+
+
+                    <div class="indiv_restaurant">
+                        <strong>Restaurant:</strong></br>
+                        <p><stong><%= restaurant.name %></stron><br>
+                       <strong>Address:</strong><br>
+                        <%= restaurant.address %><br>
+                        <strong>Spice Level:</strong><br>
+                        <%= restaurant.spicy %><br>
+                        <strong>Cost:</strong>
+                        <%= restaurant.cost.titleize %><br>
+                        <strong>Vegetarian Friendly?</strong>
+                        <%= restaurant.vegetarian.to_s %><br>
+                        <%= link_to 'Show', restaurant %></p>
+                    </div>
             <% end %>
-        <% else %>
-
-
-            <div class="indiv_restaurant">
-                <strong>Restaurant:</strong></br>
-                <p><stong><%= restaurant.name %></stron><br>
-               <strong>Address:</strong><br>
-                <%= restaurant.address %><br>
-                <strong>Spice Level:</strong><br>
-                <%= restaurant.spicy %><br>
-                <strong>Cost:</strong>
-                <%= restaurant.cost.titleize %><br>
-                <strong>Vegetarian Friendly?</strong>
-                <%= restaurant.vegetarian.to_s %><br>
-                <%= link_to 'Show', restaurant %></p>
-            </div>
         <% end %>
     <% end %>
 
