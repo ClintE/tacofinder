@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
     #respond_to do |format|
       if @user.save
+        $veg = @user.vegetarian
         auto_login(@user)
         redirect_to(@user, notice: 'User was successfully created')
       else

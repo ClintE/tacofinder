@@ -2,23 +2,24 @@
 
 <h1 class="rest_text"><strong>All Restaurants</strong></h1>
 
-
+<h1 class="rest_text"><%= $veg %></h1>
 <div class="main_list">
-    <% @restaurant = Restaurant.where(vegetarian: 'No') %>
-    <% @restaurant.each do |restaurant| %>
-                    <div class="indiv_restaurant">
-                        <strong>Name: </strong></br>
-                        <p><%= restaurant.name %><br>
-                       <strong>Address:</strong><br>
-                        <%= restaurant.address %><br>
-                        <strong>Spice Level:</strong><br>
-                        <%= restaurant.spicy %><br>
-                        <strong>Cost:</strong>
-                        <%= restaurant.cost.titleize %><br>
-                        <strong>Vegetarian Friendly?</strong>
-                        <%= restaurant.vegetarian.to_s %><br>
-                        <%= link_to 'Show', restaurant %></p>
-                    </div>
+
+    <% #@restaurant = Restaurant.where(vegetarian: 'No') %>
+    <% @restaurants.each do |restaurant| %>
+        <div class="indiv_restaurant">
+            <strong>Name: </strong></br>
+            <p><%= restaurant.name %><br>
+           <strong>Address:</strong><br>
+            <%= restaurant.address %><br>
+            <strong>Spice Level:</strong><br>
+            <%= restaurant.spicy %><br>
+            <strong>Cost:</strong>
+            <%= restaurant.cost.titleize %><br>
+            <strong>Vegetarian Friendly?</strong>
+            <%= restaurant.vegetarian.to_s %><br>
+            <%= link_to 'Show', restaurant %></p>
+        </div>
     <% end %>
 
 </div>
