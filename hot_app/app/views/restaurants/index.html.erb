@@ -4,20 +4,21 @@
 
 
 <div class="master_list">
-    <% @restaurants.each do |restaurant| %>
     <div class="individual_restaurant">
-        <strong>Restaurant:</strong></br>
-        <p><stong><%= restaurant.name %></stron><br>
-       <strong>Address:</strong><br>
-        <%= restaurant.address %><br>
-        <strong>Spice Level:</strong><br>
-        <%= restaurant.spicy %><br>
-        <strong>Cost:</strong>
-        <%= restaurant.cost %><br>
-        <strong>Vegetarian Friendly?</strong>
-        <%= restaurant.vegetarian %><br>
-        <%= link_to 'Show', restaurant %></p>
-    </div>
+    <% @restaurants.each do |restaurant| %>
+        <div class="individual_restaurant">
+            <br><h3>Restaurant:</h1><b3>
+            <h1><%= restaurant.name %></h1>
+           <h3>Address:</h3>
+            <h4><%= restaurant.address %></h4>
+            <h3>Spice Level:</strong><h3>
+            <h4><%= restaurant.spicy %></h4>
+            <strong>Cost:</strong>
+            <%= restaurant.cost %><br>
+            <strong>Vegetarian Friendly?</strong>
+            <%= restaurant.vegetarian %><br>
+            <%= link_to 'Show', restaurant %>
+        </div>
 </div>
         <!-- <td><%= link_to 'Edit', edit_restaurant_path(restaurant) %></td>
         <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->

@@ -14,20 +14,6 @@
  *= require_self
  */
 /*=============================================================
-    Authour URL: www.designbootstrap.com
-    
-    http://www.designbootstrap.com/
-
-    License: MIT
-
-    http://opensource.org/licenses/MIT
-
-    100% Free To use For Personal And Commercial Use.
-
-    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
-========================================================  */
-
 
 /*================================
     GOOGLE FONT
@@ -40,10 +26,49 @@
 ==================================*/
 
 body {
-   font-family: 'Maven Pro', sans-serif;
+   font-family: 'Oswald', sans-serif;
     line-height: 30px;
     font-size: 14px;
 }
+
+
+.individual_restaurant {
+  background-color: black;
+}
+
+
+.master_list {
+  text-align: center;
+  padding-top: 12;
+  overflow: scroll;
+  background-color: red;
+  padding-top: 14px;
+}
+
+h1, .h1 {
+  font-size: 3.5em;
+  color: red;
+}
+
+h2 {
+  color: #494949;
+  size: size 2em;
+}
+
+h3 {
+  color: #e7e1e1;
+  size: 1.5em;
+}
+
+h4 {
+  size: 3em;
+  color: #e7e1e1;
+}
+.navbar navbar-fixed-top navbar-inverse {
+  background-color: #DB540A;
+
+}
+
 
 section {
     padding-top: 60px;
@@ -51,6 +76,10 @@ section {
 }
 .pad-bottom {
     padding-bottom: 90px;
+}
+
+individual_restaurant {
+  background-color: ;
 }
 
 .icon-wrapper {
@@ -62,7 +91,7 @@ section {
 
 h2 {
     color:#D30515;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 .head-line h1 {
  margin-bottom: 20px;
