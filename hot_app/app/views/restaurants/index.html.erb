@@ -5,20 +5,41 @@
 
 <div class="main_list">
     <% @restaurants.each do |restaurant| %>
-    <div class="indiv_restaurant">
-        <strong>Restaurant:</strong></br>
-        <p><stong><%= restaurant.name %></stron><br>
-       <strong>Address:</strong><br>
-        <%= restaurant.address %><br>
-        <strong>Spice Level:</strong><br>
-        <%= restaurant.spicy %><br>
-        <strong>Cost:</strong>
-        <%= restaurant.cost.titleize %><br>
-        <strong>Vegetarian Friendly?</strong>
-        <%= restaurant.vegetarian.to_s.titleize %><br>
-        <%= link_to 'Show', restaurant %></p>
-    </div>
+        <% if @user %>
+            <% if restaurant.vegetarian == true %>
+                    <div class="indiv_restaurant">
+                        <strong>Restaurant: </strong></br>
+                        <p><%= restaurant.name %><br>
+                       <strong>Address:</strong><br>
+                        <%= restaurant.address %><br>
+                        <strong>Spice Level:</strong><br>
+                        <%= restaurant.spicy %><br>
+                        <strong>Cost:</strong>
+                        <%= restaurant.cost.titleize %><br>
+                        <strong>Vegetarian Friendly?</strong>
+                        <%= restaurant.vegetarian.to_s %><br>
+                        <%= link_to 'Show', restaurant %></p>
+                    </div>
+            <% end %>
+        <% else %>
+
+
+            <div class="indiv_restaurant">
+                <strong>Restaurant:</strong></br>
+                <p><stong><%= restaurant.name %></stron><br>
+               <strong>Address:</strong><br>
+                <%= restaurant.address %><br>
+                <strong>Spice Level:</strong><br>
+                <%= restaurant.spicy %><br>
+                <strong>Cost:</strong>
+                <%= restaurant.cost.titleize %><br>
+                <strong>Vegetarian Friendly?</strong>
+                <%= restaurant.vegetarian.to_s %><br>
+                <%= link_to 'Show', restaurant %></p>
+            </div>
+        <% end %>
     <% end %>
+
 </div>
     
 
