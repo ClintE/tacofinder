@@ -1,3 +1,6 @@
 class Restaurant < ActiveRecord::Base
-	belongs_to :user
+	# attr_accessor :vegetarian, :cost, :spicy
+
+	has_many :customers
+	has_many :users, through: :customers
 end

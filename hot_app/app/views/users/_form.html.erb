@@ -34,7 +34,7 @@ Spiciness
   Vegetarian?
     <div class="field">
     <%= f.select :vegetarian do %>
-      <%= [['Yes', true], ['No', false]].each do |v| %>
+      <%= [['Yes', 'Yes'], ['No', 'No']].each do |v| %>
         <%= content_tag(:option, v.first, value: v.last) %>
       <% end %>
     <% end %>
