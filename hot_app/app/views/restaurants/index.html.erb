@@ -2,8 +2,10 @@
 
 <h1 class="rest_text"><strong>All Restaurants</strong></h1>
 
-
+<% @list = (SELECT "restaurants".* FROM "users" INNER JOIN "restaurants" ON "restaurants"."vegetarian" = "users"."vegetarian") %>
+<%= @list.inspect %>
 <div class="main_list">
+
     <% @restaurant = Restaurant.where(vegetarian: 'No') %>
     <% @restaurant.each do |restaurant| %>
                     <div class="indiv_restaurant">

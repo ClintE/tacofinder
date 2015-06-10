@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
 
 	validates :email, uniqueness: true
 
-	has_many :customers
-	has_many :restaurants, through: :customers
+	# has_many :customers
+	has_many :restaurants
 end
