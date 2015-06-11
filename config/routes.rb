@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # Set user path to point to /user.
   get 'user' => 'users#show'
   get 'user/edit' => 'users#edit'
-  patch 'user' => 'users#show'
+  patch 'user' => 'users#update'
 
   resources :users
   resources :restaurants
