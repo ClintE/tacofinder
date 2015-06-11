@@ -5,7 +5,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :address, :null => false
       t.integer :spicy
       t.string :cost, :index => true
-      t.boolean :vegetarian, :default => false, :index => true
+      t.string :vegetarian, :default => false, :index => true
     end
   end
 end
