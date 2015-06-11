@@ -1,50 +1,52 @@
- <%= form_for(@restaurant) do |f| %>
-  <% if @restaurant.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+ <div class="form_box">
+   <%= form_for(@restaurant) do |f| %>
+    <% if @restaurant.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
 
-      <ul>
-      <% @restaurant.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+        <ul>
+        <% @restaurant.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :address %><br>
+      <%= f.text_field :address %>
+    </div>
+
+  Spiciness
+    <div class="field">
+      <%= f.select :spicy do %>
+        <% [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7], [8, 8], [9, 9], [10, 10]].each do |c| %>
+          <%= content_tag(:option, c.first, value: c.last) %>
+        <% end %>
       <% end %>
-      </ul>
+    </div><br>
+    Pricing
+      <div class="field">
+      <%= f.select :cost do %>
+        <%= [['Cheap', 'cheap'], ['Average', 'average'], ['Expensive', 'expensive']].each do |v| %>
+          <%= content_tag(:option, v.first, value: v.last) %>
+        <% end %>
+      <% end %>
+    </div>
+    Vegetarian friendly?
+      <div class="field">
+      <%= f.select :vegetarian do %>
+        <%= [['Yes', 'Yes'], ['No', 'No']].each do |v| %>
+          <%= content_tag(:option, v.first, value: v.last) %>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </div>
-
-Spiciness
-  <div class="field">
-    <%= f.select :spicy do %>
-      <% [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7], [8, 8], [9, 9], [10, 10]].each do |c| %>
-        <%= content_tag(:option, c.first, value: c.last) %>
-      <% end %>
-    <% end %>
-  </div><br>
-  Pricing
-    <div class="field">
-    <%= f.select :cost do %>
-      <%= [['Cheap', 'cheap'], ['Average', 'average'], ['Expensive', 'expensive']].each do |v| %>
-        <%= content_tag(:option, v.first, value: v.last) %>
-      <% end %>
-    <% end %>
-  </div>
-  Vegetarian friendly?
-    <div class="field">
-    <%= f.select :vegetarian do %>
-      <%= [['Yes', 'Yes'], ['No', 'No']].each do |v| %>
-        <%= content_tag(:option, v.first, value: v.last) %>
-      <% end %>
-    <% end %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
