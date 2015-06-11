@@ -1,9 +1,12 @@
 body {
   background-color: #fff;
-  color: #333;
+  color: white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-align: left;
+  padding: 20px;
+  
 }
 
 p, ol, ul, td {
@@ -19,6 +22,7 @@ pre {
 }
 
 a {
+  text-align: center;
   color: #000;
   &:visited {
     color: #666;
@@ -36,7 +40,7 @@ div {
 }
 
 #notice {
-  color: green;
+  color: gray;
 }
 
 .field_with_errors {

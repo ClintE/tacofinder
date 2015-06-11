@@ -39,9 +39,18 @@
   GENERAL STYLES
 ==================================*/
 
+.form_box {
+  backround-color: yellow;
+  padding: 60px;
+  margin-left: 39%;
+  margin-right: 50%;
+}
+
 .rest_text  {
   text-align: center;
   font-style: underline;
+  font-size: 3.5em;
+  color: white;
 }
 
 .main_list  {
@@ -49,18 +58,21 @@
   height: 500px;
   overflow: scroll;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: black;
 
 }
 
 .indiv_restaurant {  
-  border: 1px solid black;
+  color: #494949;
+  text-align: center;
 }
 
 body {
    font-family: 'Maven Pro', sans-serif;
     line-height: 30px;
     font-size: 14px;
+    background-color: black;
+
 }
 
 section {
@@ -76,6 +88,20 @@ section {
     padding-bottom:30px;
     font-size:50px;
     color:#D30515;
+}
+.pagetitle {
+    color: #b20000;
+    font-size: 4em;
+
+}
+h1 {
+  text-align: center;
+  color: #b40000;
+}
+
+h4 {
+  color: #494949;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -146,18 +172,18 @@ color:#home h1 {
     -moz-background-size: cover;    
 }
 
-    #home .overlay {
+#home .overlay {
         padding-top: 100px;
         background-color: black;
         min-height: 700px;
         padding-bottom: 40px;
-    }
-     #home h1 {
-     margin-bottom: 70px;
-line-height: 40px;
-font-size: 30px;
-background-color: #D30515;
-color: white;
+}
+#home h1 {
+    margin-bottom: 70px;
+    line-height: 40px;
+    font-size: 30px;
+    background-color: #D30515;
+    color: white;
 text-transform: uppercase;
 border: 2px solid #D30515;
 padding: 20px;

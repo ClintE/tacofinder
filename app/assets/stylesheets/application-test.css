@@ -1,0 +1,324 @@
+``````/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import url(http://fonts.googleapis.com/css?family=Anton|Maven+Pro:500,700);  FREE GOOGLE FONTS 
+
+body {
+   font-family: 'Maven Pro', sans-serif;
+   font-size: 14px;
+   /* background-color: black;*/
+}
+
+
+/*PAGE TITLES*/
+.title {
+  padding: 40px;
+  font-size: 3em;
+  color: #b20000;
+  color: body {
+  background-color: #000;
+  font-family: sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+  font-size: 3em;
+  color: red;
+  font-weight: bold;
+}
+/*-------------end------------------*/
+
+
+  /*NAVIGATION*/
+ a:link {
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+
+a:active,
+a:hover {
+  text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+.navbar-inverse {
+  background-color: body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+};
+  border-color: #080808;
+}
+
+/*.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  background-color: black;
+}
+*/
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  background-color: black;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  /*position: relative;*/
+  min-height: 50px;
+  margin-bottom: 20px;
+  /*border: 1px solid transparent;*/
+}
+
+/*.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical > .btn-group:before, .btn-group-vertical > .btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
+  /*display: table;*/
+/*  content: " ";
+  background-color: black;
+}
+*/
+
+
+
+/*end navigation__________________________________________________________*/
+
+
+.rest_text  {
+  text-align: center;
+  font-style: underline;
+  text-transform: lowercase;
+  letter-spacing: 10px;
+  text-align: right;
+}
+
+.indiv_restaurant {  
+  border: 1px solid black;
+  padding: 30px;
+  background-color: white;
+}
+
+.main_list {
+  max-width: 75%;
+  height: 500px;
+  overflow: scroll;
+  margin: 0 auto;
+  background-color: white;
+  clear: both;
+  padding-top: 50px;
+  background-color: blue;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.pad-bottom {
+    padding-bottom: 90px;
+}
+
+h1 {
+    color:#000;
+    font-size: 2.5em;
+    font-family: sans-serif;
+}
+
+h5 {
+    color:#D30515;
+    font-size: 3.5em;
+    font-family: sans-serif;
+}
+
+
+
+ /*================================
+  BUTTON STYLES
+==================================
+.btn-custom {
+   min-height:60px;
+    border-radius:0px;
+    background-color: white;
+-webkit-border-radius:0px;
+-moz-border-radius:0px;
+padding:15px 40px 15px 40px;
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+   margin:25px 5px 5px 0px;
+}
+
+
+
+
+/*===========================
+    FOOTER
+ ============================  */
+
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {```
