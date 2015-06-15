@@ -20,6 +20,8 @@ Some Like It Hot is built on Ruby on Rails, using [Sorcery](https://github.com/N
 
 
 ## Links
+[Deployed App](https://enigmatic-fortress-8015.herokuapp.com/)
+
 [User Storyboards](https://trello.com/b/OHE4NcQn/some-like-it-hot "User Storyboards for Some Like It Hot Ruby on Rails app.")
 
 [ERDs](https://goo.gl/photos/Dsmdz4837nJbQfw77 "ERDs - user and restaurant database tables")
